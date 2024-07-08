@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: 43187d3e-7c3c-4c11-b5d4-4b2334fb6d96
 management:
-  docChecksum: bdbe0b838757272c0b9e043ea9c5cb5f
+  docChecksum: 15f8f5e148453cdd9612beaac38125e3
   docVersion: 0.0.1
-  speakeasyVersion: 1.326.3
-  generationVersion: 2.359.6
-  releaseVersion: 0.1.6
-  configChecksum: 3f94176e4eab5b733dc40cb846a4cdfe
+  speakeasyVersion: 1.330.0
+  generationVersion: 2.361.10
+  releaseVersion: 0.1.7
+  configChecksum: 81ff207a02c566bcd2352a9809853391
   repoURL: https://github.com/dubinc/dub-php.git
   installationURL: https://github.com/dubinc/dub-php
 features:
@@ -87,6 +87,7 @@ generatedFiles:
   - src/Models/Operations/RetrieveAnalyticsResponse.php
   - src/Models/Operations/GetWorkspaceRequest.php
   - src/Models/Operations/GetWorkspaceResponse.php
+  - src/Models/Operations/UpdateWorkspaceRequestBody.php
   - src/Models/Operations/UpdateWorkspaceRequest.php
   - src/Models/Operations/UpdateWorkspaceResponse.php
   - src/Models/Operations/GetTagsRequest.php
@@ -201,6 +202,7 @@ generatedFiles:
   - docs/Models/Operations/RetrieveAnalyticsResponse.md
   - docs/Models/Operations/GetWorkspaceRequest.md
   - docs/Models/Operations/GetWorkspaceResponse.md
+  - docs/Models/Operations/UpdateWorkspaceRequestBody.md
   - docs/Models/Operations/UpdateWorkspaceRequest.md
   - docs/Models/Operations/UpdateWorkspaceResponse.md
   - docs/Models/Operations/GetTagsRequest.md

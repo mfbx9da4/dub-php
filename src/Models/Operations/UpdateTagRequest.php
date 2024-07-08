@@ -12,7 +12,7 @@ use Dub\Utils\SpeakeasyMetadata;
 class UpdateTagRequest
 {
     /**
-     * The ID of the tag
+     * The ID of the tag to update.
      *
      * @var string $id
      */

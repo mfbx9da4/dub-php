@@ -69,7 +69,7 @@ $sdk = Dub\Dub::builder()
 
 try {
     $requestBody = new Operations\CreateLinkRequestBody();
-    $requestBody->url = 'https://google/com';
+    $requestBody->url = 'https://google.com';
     $requestBody->domain = 'lighthearted-kilogram.name';
     $requestBody->key = '<key>';
     $requestBody->externalId = '123456';
@@ -377,7 +377,7 @@ $sdk = Dub\Dub::builder()
 
 try {
     $requestBody = new Operations\UpsertLinkRequestBody();
-    $requestBody->url = 'https://google/com';
+    $requestBody->url = 'https://google.com';
     $requestBody->domain = 'monthly-hometown.info';
     $requestBody->key = '<key>';
     $requestBody->externalId = '123456';

@@ -200,20 +200,12 @@ class Tags
      *
      * Update a tag in the workspace.
      *
-     * @param  string  $id
-     * @param  ?string  $workspaceId
-     * @param  ?\Dub\Models\Operations\UpdateTagRequestBody  $requestBody
+     * @param  \Dub\Models\Operations\UpdateTagRequest  $request
      * @return \Dub\Models\Operations\UpdateTagResponse
      */
     public function update(
-        string $id,
-        ?string $workspaceId = null,
-        ?\Dub\Models\Operations\UpdateTagRequestBody $requestBody = null,
+        ?\Dub\Models\Operations\UpdateTagRequest $request,
     ): \Dub\Models\Operations\UpdateTagResponse {
-        $request = new \Dub\Models\Operations\UpdateTagRequest();
-        $request->id = $id;
-        $request->workspaceId = $workspaceId;
-        $request->requestBody = $requestBody;
         $baseUrl = $this->sdkConfiguration->getServerUrl();
         $url = Utils\Utils::generateUrl($baseUrl, '/tags/{id}', \Dub\Models\Operations\UpdateTagRequest::class, $request, $this->sdkConfiguration->globals);
         $options = ['http_errors' => false];

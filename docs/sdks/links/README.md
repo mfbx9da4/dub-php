@@ -94,7 +94,7 @@ $sdk = Dub\Dub::builder()->setSecurity($security)->build();
 
 try {
         $requestBody = new Operations\CreateLinkRequestBody();
-    $requestBody->url = 'https://google/com';
+    $requestBody->url = 'https://google.com';
     $requestBody->domain = 'lighthearted-kilogram.name';
     $requestBody->key = '<key>';
     $requestBody->externalId = '123456';
@@ -575,7 +575,7 @@ try {
         $request = new Operations\UpdateLinkRequest();
     $request->linkId = '<value>';
     $request->requestBody = new Operations\UpdateLinkRequestBody();
-    $request->requestBody->url = 'https://google/com';
+    $request->requestBody->url = 'https://google.com';
     $request->requestBody->domain = 'tidy-amazon.name';
     $request->requestBody->key = '<key>';
     $request->requestBody->externalId = '123456';
@@ -952,7 +952,7 @@ try {
         '<value>',
     ];
     $request->data = new Operations\Data();
-    $request->data->url = 'https://google/com';
+    $request->data->url = 'https://google.com';
     $request->data->trackConversion = false;
     $request->data->archived = false;
     $request->data->publicStats = false;
@@ -1271,7 +1271,7 @@ $sdk = Dub\Dub::builder()->setSecurity($security)->build();
 
 try {
         $requestBody = new Operations\UpsertLinkRequestBody();
-    $requestBody->url = 'https://google/com';
+    $requestBody->url = 'https://google.com';
     $requestBody->domain = 'monthly-hometown.info';
     $requestBody->key = '<key>';
     $requestBody->externalId = '123456';

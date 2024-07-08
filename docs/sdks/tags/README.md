@@ -128,12 +128,14 @@ $security->token = 'DUB_API_KEY';
 $sdk = Dub\Dub::builder()->setSecurity($security)->build();
 
 try {
-        $requestBody = new Operations\UpdateTagRequestBody();
-    $requestBody->name = '<value>';
-    $requestBody->color = Operations\UpdateTagColor::Brown;
-    $requestBody->tag = '<value>';
+        $request = new Operations\UpdateTagRequest();
+    $request->id = '<id>';
+    $request->requestBody = new Operations\UpdateTagRequestBody();
+    $request->requestBody->name = '<value>';
+    $request->requestBody->color = Operations\UpdateTagColor::Brown;
+    $request->requestBody->tag = '<value>';;
 
-    $response = $sdk->tags->update('<value>', '<value>', $requestBody);
+    $response = $sdk->tags->update($request);
 
     if ($response->tagSchema !== null) {
         // handle response
@@ -145,11 +147,9 @@ try {
 
 ### Parameters
 
-| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
-| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| `id`                                                                                           | *string*                                                                                       | :heavy_check_mark:                                                                             | The ID of the tag                                                                              |
-| `workspaceId`                                                                                  | *string*                                                                                       | :heavy_minus_sign:                                                                             | The ID of the workspace.                                                                       |
-| `requestBody`                                                                                  | [\Dub\Models\Operations\UpdateTagRequestBody](../../Models/Operations/UpdateTagRequestBody.md) | :heavy_minus_sign:                                                                             | N/A                                                                                            |
+| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `$request`                                                                             | [\Dub\Models\Operations\UpdateTagRequest](../../Models/Operations/UpdateTagRequest.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
 
 
 ### Response
